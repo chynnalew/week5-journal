@@ -13,7 +13,9 @@ $(document).ready(function() {
     const entry = new Entry(title, body);
     const response = entry.numberOfWords();
     const vowels = entry.numberOfVowels();
+    const consonants = entry.numberOfConsonants();
     $("#entries").html(response);
     $("#vowels").html(vowels);
+    $("#consonants").html(consonants);
   })
 })
